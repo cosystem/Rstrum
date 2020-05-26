@@ -1,3 +1,13 @@
+#' Get all strumming patterns
+#'
+#' @param notetype Type of note. Currently supports 4 (1/4), 8 (1/8) and 16 (1/16) notes
+#' @param n_min Minimal number of beats
+#' @param dlm Delimiter for printing
+#' @return A tibble containing all beats and strums. First column is beats. Second column is the associated strums
+#' @examples
+#' get_all_strums(8, 4, '|')
+#' get_all_strums(16, 7, '|')
+
 get_all_strums <- function(notetype, n_min, dlm) {
   make_strum <- function(type, n) replicate(n %/% 2, type)
 
