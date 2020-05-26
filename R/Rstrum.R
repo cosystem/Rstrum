@@ -101,7 +101,17 @@ get_all_strums <- function(notetype, n_min, dlm) {
 
   tibble(beat=printable_beats, strum=printable_strums)
 
-  }
+}
+
+print_strum <- function(df) {
+  apply(df, 1, function(line) {
+    cat(line[['beat']])
+    cat("\n")
+    cat(line[['strum']])
+    cat("\n")
+    cat("\n")
+  })
+}
 
 
 
