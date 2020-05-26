@@ -10,9 +10,9 @@ library('stringr')
 library('dplyr')
 library('tibble')
 load("functions.RData")
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, comment = NA)
 ```
 
-```{r strum, echo=FALSE}
+```{r strum}
 print_strum(get_all_strums(8, 4, '|'))
 ```
