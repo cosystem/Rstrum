@@ -113,5 +113,10 @@ print_strum <- function(df) {
   })
 }
 
-
+save(get_all_strums,
+     multi_replace,
+     multi_replace_s,
+     multi_replace_v,
+     print_strum,
+     file = "functions.RData")
 

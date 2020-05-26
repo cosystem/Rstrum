@@ -1,0 +1,18 @@
+---
+title: "strums"
+author: "Guanya Peng"
+date: "May 26, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library('stringr')
+library('dplyr')
+library('tibble')
+load("functions.RData")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r strum, echo=FALSE}
+print_strum(get_all_strums(8, 4, '|'))
+```
